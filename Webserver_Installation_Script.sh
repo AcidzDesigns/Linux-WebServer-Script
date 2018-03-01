@@ -74,12 +74,12 @@ echo "
 
 "
 sleep 1
-apt-get -y install php7.0-fpm php7.0-mysql php7.0-curl php7.0-gd php7.0-intl php-pear php-imagick php7.0-imap php7.0-mcrypt php-memcache  php7.0-pspell php7.0-recode php7.0-sqlite3 php7.0-tidy php7.0-xmlrpc php7.0-xsl php7.0-mbstring php-gettext
 
-clear
+add-apt-repository -y ppa:ondrej/php
+apt -y install php7.2 php7.2-cli php7.2-gd php7.2-mysql php7.2-pdo php7.2-mbstring php7.2-tokenizer php7.2-bcmath php7.2-xml php7.2-fpm php7.2-curl php7.2-zip
 
 sleep 0.5
-sed -i 's/;cgi\.fix_pathinfo=1/cgi\.fix_pathinfo=0/g' /etc/php/7.0/fpm/php.ini
+sed -i 's/;cgi\.fix_pathinfo=1/cgi\.fix_pathinfo=0/g' /etc/php/7.2/fpm/php.ini
 
 echo "
 
@@ -104,8 +104,8 @@ apt-get -y install nginx
 clear
 sleep 0.5
 read -p "Downloading Nginx Conf. Press [ENTER] to begin"
-wget https://pastebin.com/raw/UKhcxrmw
-mv UKhcxrmw default
+wget https://pastebin.com/raw/ih3f011P
+mv ih3f011P default
 mv default /etc/nginx/sites-available/default
 
 echo "
