@@ -84,7 +84,7 @@ sed -i 's/;cgi\.fix_pathinfo=1/cgi\.fix_pathinfo=0/g' /etc/php/7.2/fpm/php.ini
 echo "
 
 "
-service php7.0-fpm restart | echo "Restarted PHP"
+service php7.2-fpm restart | echo "Restarted PHP"
 
 echo "PHP Installed"
 
