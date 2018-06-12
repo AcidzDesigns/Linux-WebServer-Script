@@ -248,6 +248,6 @@ clear
 #############################
 echo "PHP, phpMyAdmin, Ngix and MariaDB are installed and ready for you to use, enjoy"
 sleep 0.2
-echo "Thank for you using my script."
+echo "Thank for you using my script. Please report any issues that occurr during the installation"
 sleep 2
 clear
